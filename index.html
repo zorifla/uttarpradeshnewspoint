@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy &amp; Terms of Service - Uttarakhand News</title>
-    <meta name="description" content="Official Privacy Policy and Terms of Service (Terms &amp; Conditions) for Uttarakhand News (उत्तराखंड न्यूज़) Android application by Zorif. Learn how we handle reader privacy, ad serving, RSS feed aggregation, and service terms.">
-    <link rel="canonical" href="https://zorifla.github.io/uttarakhandnews/">
+    <title>Privacy Policy &amp; Terms of Service - Uttar Pradesh News</title>
+    <meta name="description" content="Official Privacy Policy and Terms of Service (Terms &amp; Conditions) for Uttar Pradesh News Android application by Zorif. Learn how we handle reader privacy, RSS news aggregation, ad serving, push notifications, and service terms.">
+    <link rel="canonical" href="https://zorifla.github.io/uttarpradeshnewspoint/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1B5E20;
-            --primary-dark: #0B3B11;
-            --primary-light: #E8F5E9;
-            --primary-border: #C8E6C9;
-            --accent: #EA580C;
-            --accent-blue: #2563EB;
-            --text-main: #0F172A;
+            --primary-green: #558B2F;
+            --primary-dark: #33691E;
+            --primary-light: #7CB342;
+            --accent-green: #F1F8E9;
+            --text-dark: #0F172A;
             --text-secondary: #475569;
             --bg-page: #F8FAFC;
-            --bg-card: #FFFFFF;
+            --card-bg: #FFFFFF;
             --border-color: #E2E8F0;
+            --accent-crimson: #E11D48;
+            --terms-blue: #2563EB;
+            --terms-blue-bg: #EFF6FF;
+            --terms-blue-border: #BFDBFE;
+            --terms-blue-dark: #1E40AF;
         }
 
         * {
@@ -35,105 +38,123 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: var(--bg-page);
-            color: var(--text-main);
+            color: var(--text-dark);
             line-height: 1.7;
             padding: 0;
             margin: 0;
         }
 
         /* Top Header Navigation */
-        header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        .site-header {
+            background-color: var(--primary-green);
             color: #FFFFFF;
-            padding: 42px 20px 36px 20px;
+            padding: 42px 20px 34px 20px;
             text-align: center;
             border-bottom: 4px solid var(--primary-dark);
-            box-shadow: 0 4px 16px rgba(11, 59, 17, 0.2);
+            box-shadow: 0 4px 12px rgba(85, 139, 47, 0.15);
         }
 
         .header-content {
-            max-width: 840px;
+            max-width: 820px;
             margin: 0 auto;
         }
 
         .app-badge {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             background: rgba(255, 255, 255, 0.18);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            padding: 5px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 6px 14px;
             border-radius: 24px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            letter-spacing: 0.6px;
-            margin-bottom: 14px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
             text-transform: uppercase;
         }
 
-        h1 {
+        .site-header h1 {
             font-size: 2.3rem;
             font-weight: 800;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             letter-spacing: -0.5px;
         }
 
-        .subtitle {
-            font-size: 1.05rem;
+        .site-header p {
             color: #E8F5E9;
+            font-size: 1rem;
             font-weight: 400;
-            margin-bottom: 8px;
-        }
-
-        .effective-date {
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: 16px;
         }
 
         .header-action-row {
+            margin-top: 18px;
             display: flex;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
-            margin-top: 14px;
+            align-items: center;
         }
 
-        .header-btn {
+        .header-contact-btn {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.25);
             color: #FFFFFF !important;
-            border: 1.5px solid rgba(255, 255, 255, 0.6);
-            padding: 8px 20px;
-            border-radius: 24px;
+            border: 1.5px solid rgba(255, 255, 255, 0.7);
+            padding: 8px 18px;
+            border-radius: 22px;
             font-size: 0.88rem;
             font-weight: 700;
             text-decoration: none !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
             transition: all 0.2s ease;
         }
 
-        .header-btn:hover {
-            background: rgba(255, 255, 255, 0.38);
-            transform: translateY(-2px);
+        .header-contact-btn:hover {
+            background: rgba(255, 255, 255, 0.45);
+            transform: translateY(-1px);
         }
 
-        .header-btn-primary {
+        .header-btn-terms {
+            background: #DBEAFE !important;
+            color: #1E40AF !important;
+            border-color: #BFDBFE !important;
+            font-weight: 800;
+        }
+
+        .header-btn-terms:hover {
+            background: #BFDBFE !important;
+            transform: translateY(-1px);
+        }
+
+        .header-btn-contact {
             background: #FFFFFF !important;
-            color: var(--primary) !important;
+            color: var(--primary-green) !important;
             border-color: #FFFFFF !important;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
         }
 
-        .header-btn-primary:hover {
-            background: #E8F5E9 !important;
+        .header-btn-contact:hover {
+            background: #F1F8E9 !important;
+        }
+
+        .last-updated {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.9);
+            background: rgba(0, 0, 0, 0.2);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-weight: 500;
         }
 
         /* Container Layout */
         .container {
-            max-width: 880px;
-            margin: 28px auto 60px auto;
+            max-width: 860px;
+            margin: -24px auto 60px auto;
             padding: 0 20px;
         }
 
@@ -143,13 +164,13 @@
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 14px 18px;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: 8px;
-            font-size: 0.82rem;
-            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+            font-size: 0.85rem;
+            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
         }
 
         .quick-nav-title {
@@ -159,155 +180,143 @@
         }
 
         .quick-nav a {
-            background: var(--primary-light);
+            background: var(--accent-green);
             color: var(--primary-dark);
             padding: 5px 12px;
-            border-radius: 14px;
+            border-radius: 16px;
             text-decoration: none;
             font-weight: 600;
-            transition: background 0.15s ease;
+            font-size: 0.82rem;
+            border: 1px solid #DCEDC8;
+            transition: all 0.15s ease;
         }
 
         .quick-nav a:hover {
-            background: #C8E6C9;
+            background: #DCEDC8;
+            border-color: #C5E1A5;
         }
 
-        .quick-nav a.terms-pill {
-            background: #DBEAFE;
-            color: #1E40AF;
-            border: 1px solid #BFDBFE;
-            font-weight: 700;
-        }
-
-        .quick-nav a.terms-pill:hover {
-            background: #BFDBFE;
-        }
-
-        .quick-nav a.contact-pill {
-            background: #FFF3E0;
-            color: var(--accent);
-            border: 1px solid #FFE0B2;
-            font-weight: 700;
-        }
-
-        .quick-nav a.contact-pill:hover {
-            background: #FFE0B2;
-        }
-
-        /* Privacy Summary Card */
-        .summary-card {
-            background: var(--bg-card);
-            border-left: 5px solid var(--primary);
-            border-radius: 12px;
-            padding: 24px 28px;
-            margin-bottom: 24px;
-            border-top: 1px solid var(--border-color);
-            border-right: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
-        }
-
-        .summary-card h3 {
-            color: var(--primary);
-            font-size: 1.18rem;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .summary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 12px;
-            margin-top: 16px;
-        }
-
-        .summary-item {
-            background: var(--primary-light);
-            padding: 12px 16px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            color: var(--primary-dark);
-            font-weight: 500;
-            border: 1px solid #D0EBD2;
-        }
-
-        .contact-cta {
-            margin-top: 18px;
-            padding-top: 14px;
-            border-top: 1px dashed var(--primary-border);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px;
-            font-size: 0.9rem;
-        }
-
-        .contact-cta a {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--primary);
-            color: #FFFFFF !important;
-            padding: 7px 16px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: background 0.15s ease;
-        }
-
-        .contact-cta a:hover {
-            background: var(--primary-dark);
-            text-decoration: none;
-        }
-
-        /* Generic Section Card */
-        .card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 28px 32px;
-            margin-bottom: 24px;
+        .main-card {
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
-            scroll-margin-top: 28px;
+            border-radius: 16px;
+            padding: 36px 32px;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+        }
+
+        /* Quick Overview Highlights */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+
+        .highlight-item {
+            background: var(--accent-green);
+            border-left: 4px solid var(--primary-green);
+            padding: 14px 16px;
+            border-radius: 8px;
+        }
+
+        .highlight-item strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .highlight-item span {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Terms of Service Section Styling */
+        #terms {
+            scroll-margin-top: 36px;
             transition: all 0.3s ease;
         }
 
-        :target {
-            outline: 2px solid var(--accent);
-            box-shadow: 0 0 16px rgba(234, 88, 12, 0.25);
+        .terms-card-wrapper {
+            background: #FFFFFF;
+            border: 1px solid var(--terms-blue-border);
+            border-left: 6px solid var(--terms-blue);
+            border-radius: 12px;
+            padding: 30px 26px;
+            margin-bottom: 38px;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.06);
+        }
+
+        .terms-card-wrapper h2 {
+            color: var(--terms-blue-dark);
+            border-bottom: 2px solid var(--terms-blue-border);
+        }
+
+        .terms-card-wrapper h2::before {
+            background: var(--terms-blue);
+        }
+
+        .terms-card-wrapper code {
+            background: #DBEAFE;
+            color: var(--terms-blue-dark);
+        }
+
+        #terms:target,
+        .terms-highlight {
+            background-color: #EFF6FF !important;
+            border: 2px solid var(--terms-blue) !important;
+            border-radius: 14px;
+            padding: 30px 26px;
+            box-shadow: 0 6px 22px rgba(37, 99, 235, 0.18);
+            animation: pulseFadeTerms 1.8s ease-in-out;
+        }
+
+        @keyframes pulseFadeTerms {
+            0% { background-color: #DBEAFE; transform: scale(1.01); }
+            50% { background-color: #EFF6FF; }
+            100% { transform: scale(1); }
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 32px;
         }
 
         h2 {
             font-size: 1.35rem;
-            color: var(--primary);
+            color: var(--primary-green);
             margin-bottom: 14px;
             display: flex;
             align-items: center;
             gap: 10px;
             padding-bottom: 8px;
-            border-bottom: 2px solid var(--primary-light);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 18px;
+            background: var(--primary-green);
+            border-radius: 4px;
         }
 
         h3 {
             font-size: 1.05rem;
-            color: var(--text-main);
-            margin: 20px 0 8px 0;
+            color: var(--text-dark);
+            margin: 18px 0 8px 0;
         }
 
         p {
             margin-bottom: 14px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
         }
 
         ul {
-            margin: 12px 0 16px 24px;
+            margin-left: 20px;
+            margin-bottom: 16px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
         }
 
         li {
@@ -315,20 +324,56 @@
         }
 
         strong {
-            color: var(--text-main);
+            color: var(--text-dark);
         }
 
         code {
-            background: var(--primary-light);
+            background: #F1F5F9;
             color: var(--primary-dark);
             padding: 2px 6px;
             border-radius: 4px;
-            font-size: 0.85rem;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+            font-family: Consolas, Monaco, "Courier New", monospace;
+        }
+
+        /* Policy Callout Boxes */
+        .callout {
+            background-color: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--primary-light);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            font-size: 0.95rem;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .callout-warning {
+            background-color: #FFFBEB;
+            border-color: #FDE68A;
+            border-left-color: #D97706;
+        }
+
+        .callout-warning .callout-title {
+            color: #92400E;
+        }
+
+        .callout-warning p {
+            color: #78350F;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
         }
 
         a {
-            color: var(--primary);
+            color: var(--primary-green);
             font-weight: 600;
             text-decoration: none;
             transition: color 0.15s ease;
@@ -339,135 +384,31 @@
             text-decoration: underline;
         }
 
-        /* Source Grid */
-        .source-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-            margin: 16px 0 20px 0;
-        }
-
-        .source-card {
-            background: var(--bg-page);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 16px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .source-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-        }
-
-        .source-card h4 {
-            color: var(--text-main);
-            margin-bottom: 4px;
-            font-size: 1.02rem;
-        }
-
-        .source-card p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-        }
-
-        .source-card a {
-            color: var(--primary);
-            text-decoration: none;
-            font-size: 0.88rem;
-            word-break: break-all;
-        }
-
-        /* Callout Box */
-        .callout {
-            background-color: #F1F5F9;
-            border-left: 4px solid #0284C7;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 18px 0;
-            font-size: 0.92rem;
-            color: var(--text-main);
-        }
-
-        .callout-title {
-            font-weight: 700;
-            color: #0369A1;
-            margin-bottom: 6px;
-        }
-
-        /* Third party box */
-        .ad-partner-box {
-            background: #FFFBEB;
-            border: 1px solid #FDE68A;
-            border-left: 4px solid #D97706;
-            padding: 16px;
-            border-radius: 8px;
-            margin: 18px 0;
-        }
-
-        .ad-partner-box h4 {
-            color: #92400E;
-            margin-bottom: 6px;
-            font-size: 1rem;
-        }
-
-        .ad-partner-box p {
-            color: #78350F;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-        }
-
-        /* Table styles */
-        .table-responsive {
-            overflow-x: auto;
-            margin: 16px 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.88rem;
-        }
-
-        th, td {
-            padding: 12px 14px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        th {
-            background-color: var(--primary-light);
-            color: var(--primary-dark);
-            font-weight: 600;
-        }
-
-        .badge-none {
-            background: #DCFCE7;
-            color: #166534;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.78rem;
-            font-weight: 600;
-        }
-
-        .badge-ad {
-            background: #FFF3E0;
-            color: #EA580C;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.78rem;
-            font-weight: 600;
-        }
-
         /* Contact Section (#contact Anchor & Highlight) */
         #contact {
             scroll-margin-top: 36px;
+            transition: all 0.3s ease;
+        }
+
+        #contact:target,
+        .contact-highlight {
+            background-color: #F0FDF4;
+            border: 2px solid var(--primary-green) !important;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 4px 18px rgba(85, 139, 47, 0.15);
+            animation: pulseFade 1.8s ease-in-out;
+        }
+
+        @keyframes pulseFade {
+            0% { background-color: #DCEDC8; transform: scale(1.01); }
+            50% { background-color: #F0FDF4; }
+            100% { transform: scale(1); }
         }
 
         .contact-box {
-            background: var(--primary-light);
-            border: 1.5px solid var(--primary-border);
+            background: var(--accent-green);
+            border: 1.5px solid #C5E1A5;
             border-radius: 12px;
             padding: 24px;
             margin-top: 16px;
@@ -482,60 +423,48 @@
 
         .contact-details-list {
             margin: 14px auto 16px auto;
-            max-width: 460px;
+            max-width: 480px;
             text-align: left;
             background: #FFFFFF;
             padding: 14px 20px;
             border-radius: 8px;
-            border: 1px solid var(--primary-border);
+            border: 1px solid #DCEDC8;
             font-size: 0.9rem;
         }
 
         .contact-details-list div {
             margin-bottom: 6px;
-            color: var(--text-main);
+            color: var(--text-dark);
         }
 
         .contact-details-list strong {
-            color: var(--primary);
+            color: var(--primary-green);
         }
 
-        .contact-email-btn {
+        .contact-email {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--primary);
+            background: var(--primary-green);
             color: #FFFFFF !important;
             padding: 11px 24px;
             border-radius: 8px;
             font-weight: 700;
             font-size: 1rem;
             text-decoration: none !important;
-            box-shadow: 0 3px 8px rgba(27, 94, 32, 0.25);
+            box-shadow: 0 3px 8px rgba(85, 139, 47, 0.25);
             transition: all 0.2s ease;
         }
 
-        .contact-email-btn:hover {
+        .contact-email:hover {
             background: var(--primary-dark);
             transform: translateY(-1px);
-        }
-
-        .contact-highlight {
-            outline: 2px solid var(--primary) !important;
-            box-shadow: 0 0 18px rgba(27, 94, 32, 0.25) !important;
-            animation: pulseFade 1.8s ease-in-out;
-        }
-
-        @keyframes pulseFade {
-            0% { transform: scale(1.01); }
-            50% { transform: scale(1); }
-            100% { transform: scale(1); }
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 32px 20px;
+            padding: 34px 20px;
             color: var(--text-secondary);
             font-size: 0.85rem;
             border-top: 1px solid var(--border-color);
@@ -543,38 +472,42 @@
         }
 
         @media (max-width: 600px) {
-            header {
+            .site-header {
                 padding: 32px 16px 28px 16px;
             }
 
-            h1 {
+            .site-header h1 {
                 font-size: 1.8rem;
             }
 
-            .card {
-                padding: 22px 18px;
-                border-radius: 10px;
+            .main-card {
+                padding: 22px 16px;
+                border-radius: 12px;
+            }
+
+            .terms-card-wrapper {
+                padding: 20px 14px;
             }
 
             .container {
-                margin-top: 16px;
+                margin-top: -16px;
             }
         }
     </style>
 </head>
-<body>
+<body id="top">
 
     <!-- Header Banner -->
-    <header id="top">
+    <header class="site-header">
         <div class="header-content">
-            <div class="app-badge">Official Legal &amp; Policy Document</div>
-            <h1>Uttarakhand News (उत्तराखंड न्यूज़)</h1>
-            <div class="subtitle">Terms of Service &amp; Privacy Policy — Free Hindi News &amp; RSS Aggregator</div>
-            <div class="effective-date">Published by <strong>Zorif</strong> &bull; Last Updated &amp; Effective Date: November 5, 2026</div>
+            <div class="app-badge">Official Legal Policies &amp; Terms of Service</div>
+            <h1>Uttar Pradesh News</h1>
+            <p>Free Hindi News &amp; RSS Aggregator &bull; Published by <strong>Zorif</strong></p>
             <div class="header-action-row">
-                <a href="#terms" class="header-btn header-btn-primary">📜 Terms of Service &darr;</a>
-                <a href="#privacy" class="header-btn">🛡️ Privacy Policy &darr;</a>
-                <a href="#contact" class="header-btn">📬 Contact Us &darr;</a>
+                <span class="last-updated">Last Updated &amp; Effective Date: November 5, 2026</span>
+                <a href="#terms" class="header-contact-btn header-btn-terms">📜 Terms of Service &darr;</a>
+                <a href="#privacy" class="header-contact-btn">🛡️ Privacy Policy &darr;</a>
+                <a href="#contact" class="header-contact-btn header-btn-contact">📞 Contact Us / संपर्क करें &darr;</a>
             </div>
         </div>
     </header>
@@ -585,374 +518,370 @@
         <!-- Quick Navigation -->
         <nav class="quick-nav">
             <span class="quick-nav-title">Quick Navigation:</span>
-            <a href="#terms" class="terms-pill">📜 Terms of Service</a>
-            <a href="#summary">Privacy Summary</a>
-            <a href="#no-pii">Zero Personal Data</a>
-            <a href="#local-storage">Local Storage</a>
-            <a href="#admob">AdMob &amp; Meta Ads</a>
-            <a href="#sources">RSS Feed Sources</a>
+            <a href="#terms" style="background: #DBEAFE; color: #1E40AF; font-weight: 700; border: 1px solid #BFDBFE;">📜 Terms of Service</a>
+            <a href="#privacy">Privacy Summary</a>
+            <a href="#no-pii">No Personal Data</a>
+            <a href="#storage">Offline Storage</a>
+            <a href="#advertising">AdMob &amp; Meta Ads</a>
+            <a href="#rss-feeds">RSS Aggregation</a>
+            <a href="#push-notifications">Push Notifications</a>
             <a href="#permissions">Permissions</a>
-            <a href="#user-control">User Rights</a>
-            <a href="#contact" class="contact-pill">📬 Contact Us</a>
+            <a href="#contact" style="background: #DCEDC8; color: #33691E; font-weight: 700; border: 1px solid #C5E1A5;">📞 Contact Us</a>
         </nav>
 
-        <!-- Privacy at a Glance Summary Card -->
-        <div class="summary-card" id="summary">
-            <h3>🛡️ Privacy at a Glance</h3>
-            <p>We believe in total transparency. <strong>Uttarakhand News</strong> is an independent, offline-capable Hindi news aggregator that presents authentic state reporting from leading news publishers for Devbhumi Uttarakhand (देवभूमि उत्तराखंड).</p>
-            <div class="summary-grid">
-                <div class="summary-item">🚫 Zero user registration or account requirement</div>
-                <div class="summary-item">🔒 No personal data collected (No name, phone, or email)</div>
-                <div class="summary-item">📱 Saved news bookmarks and cache stay on your device</div>
-                <div class="summary-item">📢 Monetized responsibly via Google AdMob &amp; Meta mediation</div>
-                <div class="summary-item">🌐 Full original attribution with in-app reader</div>
-                <div class="summary-item">🏔️ Coverage across all 13 districts of Uttarakhand</div>
-            </div>
-            <div class="contact-cta">
-                <span>Have a privacy inquiry, feedback, or grievance?</span>
-                <a href="#contact">Contact Us Directly &darr;</a>
-            </div>
-        </div>
+        <main class="main-card">
 
-        <!-- ============================================================ -->
-        <!-- TERMS OF SERVICE (TERMS & CONDITIONS) SECTION                -->
-        <!-- ============================================================ -->
-        <div class="card" id="terms" style="border-left: 5px solid #2563EB;">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
-                <span style="background: #DBEAFE; color: #1E40AF; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Legal Compliance &amp; Trader Terms</span>
-                <span style="font-size: 0.82rem; color: var(--text-secondary);">Effective Date: November 5, 2026</span>
-            </div>
-            <h2>📜 Terms of Service (Terms &amp; Conditions)</h2>
-            <p>Welcome to <strong>Uttarakhand News (उत्तराखंड न्यूज़)</strong> ("the App", "we", "us", or "our"), published and operated by <strong>Zorif</strong> (Package: <code>com.uttarakhandnewspoint.app</code>). These Terms of Service ("Terms") constitute a legally binding agreement between you and the developer governing your download, installation, access, and use of the application on Android devices.</p>
-            <p>By downloading, installing, accessing, or using Uttarakhand News, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy below. If you do not agree to these Terms, please do not download, install, or use the application.</p>
-
-            <h3>1. Developer &amp; Publisher Identification (Trader Declaration)</h3>
-            <p>In compliance with Google Play Store developer guidelines, consumer transparency standards, and the European Union Digital Services Act (DSA) trader disclosure obligations:</p>
-            <ul>
-                <li><strong>Developer / Publisher Name:</strong> Zorif</li>
-                <li><strong>Application Name:</strong> Uttarakhand News (उत्तराखंड न्यूज़)</li>
-                <li><strong>Application Package ID:</strong> <code>com.uttarakhandnewspoint.app</code></li>
-                <li><strong>Category:</strong> News &amp; Magazines (News Aggregator)</li>
-                <li><strong>Official Support &amp; Grievance Email:</strong> <a href="mailto:zorifla@gmail.com">zorifla@gmail.com</a></li>
-                <li><strong>Target Region:</strong> General audience interested in Uttarakhand state news, culture, weather, and district updates.</li>
-            </ul>
-
-            <h3>2. License Grant &amp; Permitted Use</h3>
-            <p>Subject to your compliance with these Terms, we grant you a personal, revocable, non-exclusive, non-transferable, non-sublicensable limited license to download, install, and use the application on your personal Android device solely for your personal, non-commercial reading and informational purposes. You agree NOT to:</p>
-            <ul>
-                <li>Decompile, reverse engineer, disassemble, decrypt, or attempt to derive the source code or underlying algorithms of the application.</li>
-                <li>Scrape, mine, crawl, harvest, or bulk-extract news articles, headlines, imagery, or cached content using automated means (e.g. bots, spiders, scripts).</li>
-                <li>Modify, adapt, translate, enhance, or create derivative works based upon the application or its visual assets.</li>
-                <li>Bypass, disable, circumvent, or interfere with any security-related features, SSL certificate validation, or ad-serving technologies embedded in the app.</li>
-                <li>Use the application for any purpose that is illegal, defamatory, harassing, or in violation of applicable Indian or international laws.</li>
-            </ul>
-
-            <h3>3. Advertisements &amp; Monetization</h3>
-            <p>Uttarakhand News is provided 100% free of charge to all readers. To support ongoing feed maintenance, server bandwidth, technical updates, and development costs, the application displays digital advertisements served by <strong>Google Mobile Ads (AdMob)</strong> and <strong>Meta Audience Network</strong> through AdMob mediation.</p>
-            <ul>
-                <li><strong>Non-Intrusive Banner Ads:</strong> Positioned at the bottom of the feed and in-app reader, positioned safely above system navigation bars.</li>
-                <li><strong>Frequency-Capped Interstitials:</strong> Full-screen ads appear strictly after configured reading intervals (every 4 article clicks) and can always be closed immediately without mandatory lockouts.</li>
-                <li>By using this application, you acknowledge and agree that third-party advertisements may be presented during your browsing sessions.</li>
-            </ul>
-
-            <h3>4. RSS Feeds &amp; Publisher Intellectual Property Rights</h3>
-            <p>Uttarakhand News is a technological feed reader and aggregator. The application aggregates publicly accessible RSS syndication feeds published by leading Indian media publications:</p>
-            <ul>
-                <li><strong>लाइव हिन्दुस्तान (Live Hindustan):</strong> <a href="https://www.livehindustan.com" target="_blank" rel="noopener">livehindustan.com</a></li>
-                <li><strong>अमर उजाला (Amar Ujala):</strong> <a href="https://www.amarujala.com" target="_blank" rel="noopener">amarujala.com</a></li>
-                <li><strong>News18 हिंदी (News18 Uttarakhand):</strong> <a href="https://hindi.news18.com" target="_blank" rel="noopener">hindi.news18.com</a></li>
-            </ul>
-            <p><strong>Attribution &amp; Fair Use:</strong> All article titles, excerpts, journalistic text, trademarks, and associated media assets belong entirely to their respective media organizations. Uttarakhand News does not claim copyright or ownership over publisher content. When a reader clicks a headline, the article opens within an in-app WebView directly loading the publisher's official web page with full source credit and URL attribution.</p>
-            <p>The application software code, user interface designs, custom themes, brand logos, breaking news ticker logic, and offline Room database architecture are the exclusive intellectual property of <strong>Zorif</strong>.</p>
-
-            <h3>5. Disclaimer of Warranties ("As-Is" &amp; "As-Available")</h3>
-            <p>The application is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, whether express, statutory, or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement:</p>
-            <ul>
-                <li><strong>Non-Governmental Entity:</strong> Uttarakhand News is an independent product developed by Zorif. The application is <strong>NOT affiliated with, authorized, endorsed by, or representing</strong> the Government of Uttarakhand, the Government of India, or any municipal district administration.</li>
-                <li><strong>Third-Party Content:</strong> We do not author, edit, or independently verify the journalistic accuracy, reliability, or completeness of third-party news reports syndicated via RSS. Readers are encouraged to verify critical notices (e.g. weather warnings, road closures, administrative orders) directly with official authorities.</li>
-                <li><strong>Service Availability:</strong> We do not guarantee uninterrupted, error-free operation or continuous feed availability, which may depend on external publisher servers and internet connectivity.</li>
-            </ul>
-
-            <h3>6. Limitation of Liability</h3>
-            <p>To the maximum extent permitted by applicable law, in no event shall the developer (Zorif), affiliates, or contributors be liable for any direct, indirect, incidental, special, exemplary, consequential, or punitive damages (including loss of data, loss of profits, device interruption, or reliance on syndicated news items) arising out of or in connection with your download, access, or use of the application.</p>
-
-            <h3>7. Termination &amp; User Data Erasure</h3>
-            <p>You may terminate your agreement with these Terms at any time simply by discontinuing use and uninstalling the application from your device. Because Uttarakhand News does not operate user accounts or maintain external user profiles, uninstalling the app or clearing its storage via <strong>Android Settings &rarr; Apps &rarr; Uttarakhand News &rarr; Storage &rarr; Clear Storage / Clear Data</strong> permanently purges all cached headlines and saved bookmarks from your device.</p>
-
-            <h3>8. Governing Law &amp; Dispute Resolution</h3>
-            <p>These Terms shall be governed by, construed, and enforced in accordance with the substantive laws of <strong>India</strong>, without giving effect to any conflict of law principles. Any dispute arising out of or relating to these Terms or the application shall be subject to the exclusive jurisdiction of the competent courts in India.</p>
-
-            <h3>9. Modifications to Terms</h3>
-            <p>We reserve the right, at our sole discretion, to modify, amend, or update these Terms of Service at any time. Any changes will become effective immediately upon posting to this URL with a revised "Last Updated" date. Your continued access or use of the application after such changes constitutes your binding acceptance of the updated Terms.</p>
-
-            <h3>10. Contact &amp; Copyright Grievance Redressal</h3>
-            <p>If you have any questions, legal inquiries, feedback, or copyright grievances regarding these Terms of Service or any syndicated content, please write to us at <a href="mailto:zorifla@gmail.com">zorifla@gmail.com</a>. We take intellectual property and reader rights seriously and review inquiries within 24 to 48 business hours.</p>
-        </div>
-
-        <!-- ============================================================ -->
-        <!-- PRIVACY POLICY SECTIONS                                      -->
-        <!-- ============================================================ -->
-
-        <!-- Section 1: Introduction -->
-        <div class="card" id="privacy">
-            <h2>1. Introduction &amp; App Overview</h2>
-            <p>
-                Welcome to the Privacy Policy for <strong>Uttarakhand News (उत्तराखंड न्यूज़)</strong> ("the App", "we", "us", or "our"), published and maintained by <strong>Zorif</strong>. We are firmly committed to safeguarding the privacy of our readers while delivering fast, transparent, and accurate news aggregation for the state of Uttarakhand (देवभूमि उत्तराखंड) and national developments.
-            </p>
-            <p>
-                This Privacy Policy explains what information may be processed when you download, install, or use our mobile application. By using Uttarakhand News, you consent to the data practices described in this policy.
-            </p>
-            <p><strong>App Category:</strong> News &amp; Magazines (News Aggregator)</p>
-            <p><strong>Effective Date:</strong> November 5, 2026</p>
-        </div>
-
-        <!-- Section 2: Zero Personal Data & Local Storage -->
-        <div class="card" id="no-pii">
-            <h2>2. Information Collection &amp; Use</h2>
-            <p>
-                We believe in a minimal data footprint. Unlike many news apps, Uttarakhand News <strong>does not require any user registration, account sign-up, or login</strong>.
-            </p>
-
-            <h3>A. Zero Personal Information (PII)</h3>
-            <p>
-                <strong>We do NOT collect, store, or transmit any Personally Identifiable Information (PII)</strong>, including:
-            </p>
-            <ul>
-                <li>Your name, age, gender, or date of birth</li>
-                <li>Your email address or phone number</li>
-                <li>Your contacts or address book</li>
-                <li>Your precise geographic GPS location</li>
-                <li>Your photos, camera, microphone, or external files</li>
-                <li>Financial details or payment information (the app is 100% free)</li>
-            </ul>
-
-            <h3 id="local-storage">B. Local Storage &amp; Offline Data</h3>
-            <p>
-                Uttarakhand News utilizes an <strong>offline-first local architecture</strong> powered by Android's SQLite Room Database and SharedPreferences. The following data is saved strictly on your local device:
-            </p>
-            <ul>
-                <li><strong>Temporary News Cache:</strong> Caches headlines, short summaries, publication timestamps, and thumbnail URLs so that you can browse news quickly even in weak network areas.</li>
-                <li><strong>User Bookmarks (पसंदीदा):</strong> Articles that you manually choose to bookmark or save for later reading.</li>
-                <li><strong>App Preferences:</strong> Selected news sources and local UI preferences.</li>
-            </ul>
-            <p>
-                <em>Important: All cached articles and bookmarks are stored exclusively in your device's private app sandbox. They are never uploaded, synchronized, or transmitted to any server owned by us.</em>
-            </p>
-        </div>
-
-        <!-- Section 3: Third-Party Advertising -->
-        <div class="card" id="admob">
-            <h2>3. Third-Party Advertising (Google AdMob &amp; Meta Audience Network)</h2>
-            <p>
-                To keep Uttarakhand News completely free for all readers, we display compliant digital advertisements through <strong>Google Mobile Ads (AdMob)</strong> and <strong>Meta Audience Network</strong> via AdMob mediation.
-            </p>
-            <p>
-                Third-party ad networks automatically process certain non-personal technical device data to serve relevant ads, monitor impressions, and prevent fraud:
-            </p>
-
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Data Type</th>
-                            <th>Description &amp; Purpose</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Google Advertising ID (GAID)</strong></td>
-                            <td>Resettable device identifier used by Google &amp; Meta to serve, measure, and cap ad frequency.</td>
-                            <td><span class="badge-ad">Collected by AdMob / Meta SDKs</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Approximate Location</strong></td>
-                            <td>Coarse country/state/city level localization inferred from IP address (not GPS).</td>
-                            <td><span class="badge-ad">Collected by AdMob / Meta SDKs</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>App Interactions</strong></td>
-                            <td>Ad views, banner impressions, click events, and frequency capping metrics.</td>
-                            <td><span class="badge-ad">Collected by AdMob / Meta SDKs</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Diagnostics &amp; Crash Logs</strong></td>
-                            <td>Ad loading latency, SDK initialization performance, and error logs.</td>
-                            <td><span class="badge-ad">Collected by AdMob / Meta SDKs</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Personal Information</strong></td>
-                            <td>Name, email, phone number, contacts, documents, biometric data.</td>
-                            <td><span class="badge-none">Never Collected</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="ad-partner-box">
-                <h4>Google Mobile Ads (AdMob) Disclosure</h4>
-                <p>
-                    Google's collection and handling of ad data is governed by Google's Privacy Policy. For detailed information on Google's advertising practices and your choices:
-                </p>
-                <p>
-                    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
-                        &rarr; How Google Uses Information from Sites or Apps that Use Our Services
-                    </a>
-                    <br>
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-                        &rarr; Google Privacy Policy
-                    </a>
-                </p>
-            </div>
-
-            <div class="ad-partner-box">
-                <h4>Meta Audience Network Disclosure</h4>
-                <p>
-                    Meta (Facebook) may receive pseudonymous device specifications, IP address, and ad performance metrics to deliver mediated ads in accordance with Meta's Data Policy:
-                </p>
-                <p>
-                    <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener noreferrer">
-                        &rarr; Read Meta (Facebook) Privacy Policy
-                    </a>
-                </p>
-            </div>
-
-            <div class="callout">
-                <div class="callout-title">How to Reset or Opt-Out of Personalized Ads:</div>
-                You can reset or delete your advertising identifier or opt-out of personalized interest-based advertising anytime in your Android settings:
-                <br><strong>Settings &rarr; Google &rarr; Ads &rarr; Reset Advertising ID or Delete Advertising ID</strong>.
-            </div>
-        </div>
-
-        <!-- Section 4: RSS Feed Aggregation & In-App WebViews -->
-        <div class="card" id="sources">
-            <h2>4. RSS Feed Aggregation &amp; Web View Reader</h2>
-            <p>
-                In compliance with the Google Play Store News Policy, Uttarakhand News explicitly lists all integrated news feed providers and provides transparent attribution. News items link directly to original publisher articles:
-            </p>
-
-            <div class="source-grid">
-                <div class="source-card">
-                    <h4>लाइव हिन्दुस्तान (Live Hindustan)</h4>
-                    <p>Uttarakhand State Edition &amp; Live Bulletins</p>
-                    <a href="https://www.livehindustan.com" target="_blank" rel="noopener">https://www.livehindustan.com</a>
+            <!-- Summary Badges -->
+            <div class="highlights-grid" id="privacy">
+                <div class="highlight-item">
+                    <strong>Zero Personal Data</strong>
+                    <span>No accounts, logins, or collection of names, phone numbers, or emails.</span>
                 </div>
-                <div class="source-card">
-                    <h4>अमर उजाला (Amar Ujala)</h4>
-                    <p>Uttarakhand State News &amp; Ground Reports</p>
-                    <a href="https://www.amarujala.com" target="_blank" rel="noopener">https://www.amarujala.com</a>
+                <div class="highlight-item">
+                    <strong>Offline Device Storage</strong>
+                    <span>Saved bookmarks and cache stay strictly on your phone only.</span>
                 </div>
-                <div class="source-card">
-                    <h4>News18 हिंदी (hindi.news18.com)</h4>
-                    <p>Uttarakhand News Desk &amp; Breaking Updates</p>
-                    <a href="https://hindi.news18.com" target="_blank" rel="noopener">https://hindi.news18.com</a>
+                <div class="highlight-item">
+                    <strong>Third-Party Ads</strong>
+                    <span>Monetized cleanly using Google AdMob &amp; Meta Audience Network mediation.</span>
+                </div>
+                <div class="highlight-item">
+                    <strong>Push Notifications</strong>
+                    <span>Real-time news alerts via Firebase FCM with full user opt-out control.</span>
                 </div>
             </div>
 
-            <p>
-                When you tap any news card, the full article is loaded inside an in-app <strong>Android WebView</strong> directly from the publisher's official server.
-            </p>
-            <p>
-                Please note that when external publisher pages are rendered inside the WebView, the publisher's web servers may utilize standard cookies, web beacons, or scripts subject to their respective privacy policies. We do not inspect, intercept, or store browser cookies or external website communications.
-            </p>
-        </div>
-
-        <!-- Section 5: Permissions -->
-        <div class="card" id="permissions">
-            <h2>5. Android Device Permissions Used</h2>
-            <p>
-                Uttarakhand News requests only minimal, standard, non-sensitive Android permissions:
-            </p>
-            <ul>
-                <li><code>android.permission.INTERNET</code>: Essential for downloading official RSS news feeds, fetching article images, and rendering advertisements.</li>
-                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Detects whether your device is connected to Wi-Fi, cellular, or offline, enabling seamless offline bookmark fallback.</li>
-                <li><code>com.google.android.gms.permission.AD_ID</code>: Standard Google Play permission required on Android 13+ to access the resettable Advertising ID for ad frequency capping.</li>
-            </ul>
-            <p>
-                The App does <em>NOT</em> request sensitive permissions for Camera, Microphone, Contacts, Precise GPS Location, SMS, Phone State, or External Storage.
-            </p>
-        </div>
-
-        <!-- Section 6: User Rights & Data Deletion -->
-        <div class="card" id="user-control">
-            <h2>6. Data Retention &amp; User Deletion Rights</h2>
-            <p>
-                Because all user data is stored strictly on your local device and never transmitted to our servers, you maintain complete and immediate control over your data:
-            </p>
-            <ul>
-                <li><strong>Individual Article Deletion:</strong> You can remove any saved bookmark at any time by tapping the bookmark icon or swiping the card in the <em>पसंदीदा (Saved)</em> tab with undo support.</li>
-                <li><strong>Complete Data Erasure:</strong> You can completely clear all cached headlines and saved articles at any time by going to <strong>Settings &rarr; Apps &rarr; Uttarakhand News &rarr; Storage &rarr; Clear Data / Clear Storage</strong>.</li>
-                <li><strong>Uninstalling the App:</strong> Uninstalling the application automatically and permanently purges all local app data from your device.</li>
-            </ul>
-        </div>
-
-        <!-- Section 7: Children's Privacy -->
-        <div class="card" id="children-privacy">
-            <h2>7. Children's Privacy (COPPA &amp; GDPR Compliance)</h2>
-            <p>
-                Uttarakhand News is designed for a general audience seeking news updates and is not targeted towards children under the age of 13. We do not knowingly solicit or collect personal information from children under 13. If you believe that a child has provided personal information to us, please contact us immediately so that we can take appropriate steps.
-            </p>
-        </div>
-
-        <!-- Section 8: Security -->
-        <div class="card" id="security">
-            <h2>8. Data Security &amp; SSL Validation</h2>
-            <p>
-                We value your trust. All RSS feed queries and in-app web views use standard Secure Sockets Layer / Transport Layer Security (SSL/TLS) HTTPS encryption to protect data in transit. In strict compliance with Google Play's Device and Network Abuse security standards, our in-app browser enforces proper SSL certificate verification to protect users against man-in-the-middle network tampering.
-            </p>
-        </div>
-
-        <!-- Section 9: Disclaimer & Intellectual Property -->
-        <div class="card" id="disclaimer">
-            <h2>9. Publisher Disclaimer &amp; Fair Use</h2>
-            <p>
-                Uttarakhand News operates strictly as an RSS reader and aggregator. All headlines, excerpts, images, trademarks, and copyrights belong to their respective publishers (Live Hindustan, Amar Ujala, hindi.news18.com). The application does not claim ownership or edit the original reporting, serving solely as a technological conduit with full attribution.
-            </p>
-        </div>
-
-        <!-- Section 10: Policy Updates -->
-        <div class="card" id="policy-changes">
-            <h2>10. Changes to This Privacy Policy</h2>
-            <p>
-                We may periodically update this Privacy Policy to reflect app enhancements, legal requirements, or advertising partner updates. Any modifications will be posted directly to this page with an updated "Last Updated" revision date. We encourage users to review this page periodically.
-            </p>
-        </div>
-
-        <!-- Section 11: Contact & Support (Target for #contact) -->
-        <div class="card" id="contact">
-            <h2>11. Contact Information &amp; Grievance Redressal</h2>
-            <p>
-                If you have questions, feedback, technical inquiries, copyright notices, or grievances regarding these Terms of Service or our Privacy Policy, please reach out to our team:
-            </p>
-            <div class="contact-box">
-                <p style="font-size: 1.15rem; font-weight: 700; color: var(--primary-dark);">
-                    Uttarakhand News Developer &amp; Support Team
+            <!-- ======================================================== -->
+            <!-- TERMS OF SERVICE (TERMS & CONDITIONS) SECTION             -->
+            <!-- ======================================================== -->
+            <section id="terms" class="terms-card-wrapper">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                    <span style="background: #DBEAFE; color: #1E40AF; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 700; text-transform: uppercase;">Legal Compliance &amp; Trader Terms</span>
+                    <span style="font-size: 13px; color: var(--text-secondary);">Effective Date: November 5, 2026</span>
+                </div>
+                <h2>📜 Terms of Service (Terms &amp; Conditions)</h2>
+                <p>
+                    Welcome to <strong>Uttar Pradesh News</strong> ("the App", "we", "us", or "our"), a news aggregation mobile application published and operated by <strong>Zorif</strong> (Package: <code>com.uttarpradeshnewspoint.app</code>). These Terms of Service ("Terms") govern your download, access, and use of Uttar Pradesh News via the Google Play Store.
+                </p>
+                <p>
+                    By downloading, installing, accessing, or using this application, you agree to be bound by these Terms and our Privacy Policy below. If you do not agree to these Terms, please do not use the application.
                 </p>
 
-                <div class="contact-details-list">
-                    <div><strong>Legal Entity / Developer:</strong> Zorif</div>
-                    <div><strong>Application:</strong> Uttarakhand News (उत्तराखंड न्यूज़)</div>
-                    <div><strong>Application Package:</strong> <code>com.uttarakhandnewspoint.app</code></div>
-                    <div><strong>Category:</strong> News &amp; Magazine Aggregator</div>
-                    <div><strong>Official Support Email:</strong> zorifla@gmail.com</div>
-                    <div><strong>Response Time:</strong> Within 24–48 hours</div>
+                <h3>1. Developer &amp; Publisher Identification (Trader Declaration)</h3>
+                <p>
+                    In accordance with Google Play Store developer policies and international consumer transparency regulations (including the EU Digital Services Act / Trader requirements):
+                </p>
+                <ul>
+                    <li><strong>Developer / Publisher Name:</strong> Zorif</li>
+                    <li><strong>Application Name:</strong> Uttar Pradesh News (उत्तर प्रदेश न्यूज़)</li>
+                    <li><strong>Application Package Name:</strong> <code>com.uttarpradeshnewspoint.app</code></li>
+                    <li><strong>Official Support &amp; Grievance Email:</strong> <a href="mailto:zorifla@gmail.com">zorifla@gmail.com</a></li>
+                    <li><strong>Official Website:</strong> <a href="https://zorifla.github.io/uttarpradeshnewspoint/" target="_blank" rel="noopener">https://zorifla.github.io/uttarpradeshnewspoint/</a></li>
+                    <li><strong>App Category:</strong> News &amp; Magazine Aggregator / Hindi RSS Feed Reader</li>
+                    <li><strong>Operating Region:</strong> Uttar Pradesh, India</li>
+                    <li><strong>Response Window:</strong> Queries and feedback addressed within 24–48 business hours</li>
+                </ul>
+
+                <h3>2. License Grant &amp; Permitted Use</h3>
+                <p>
+                    We grant you a personal, non-exclusive, non-transferable, revocable license to download, install, and use Uttar Pradesh News strictly for personal, non-commercial reading of news feeds and offline bookmarks. You agree not to:
+                </p>
+                <ul>
+                    <li>Decompile, reverse engineer, disassemble, or attempt to extract the source code or local database schema of the application.</li>
+                    <li>Scrape, spider, crawl, bulk-extract, or republish aggregated news summaries, headlines, or RSS feed items without prior written consent.</li>
+                    <li>Bypass, modify, tamper with, or circumvent any ad-serving technology or security mechanisms implemented in the app.</li>
+                    <li>Use the app for any unlawful purpose, defamatory dissemination, or in violation of applicable local, state, national, or international regulations.</li>
+                </ul>
+
+                <h3>3. RSS News Aggregation, In-App WebViews &amp; Fair Use</h3>
+                <p>
+                    Uttar Pradesh News is a technological feed aggregator that fetches publicly available RSS syndication feeds published by leading Hindi news outlets:
+                </p>
+                <ul>
+                    <li>The App fetches official feeds from <strong>Dainik Bhaskar</strong>, <strong>Live Hindustan</strong> (Lucknow &amp; Varanasi editions), <strong>Amar Ujala</strong>, and <strong>News18 Hindi</strong>.</li>
+                    <li>The App does not author, edit, modify, censor, or control original news reports or editorial opinions.</li>
+                    <li>When you tap on any article card, the full original article is opened within an in-app <strong>Android WebView</strong> (or custom reader view), loading directly from the publisher's official web servers.</li>
+                    <li>All copyrights, trademarks, logos, and journalistic content belong entirely to their respective original publishers under fair use news syndication.</li>
+                </ul>
+
+                <h3>4. Advertisements &amp; Monetization</h3>
+                <p>
+                    Uttar Pradesh News is offered 100% free of charge to all readers. To support ongoing feed maintenance, server infrastructure, and development costs, the app displays third-party advertisements via <strong>Google Mobile Ads (Google AdMob)</strong> and <strong>Meta Audience Network</strong> through official AdMob mediation. By using the app, you acknowledge and agree that compliant banner and interstitial ads may appear during your reading experience.
+                </p>
+
+                <h3>5. Push Notifications &amp; In-App Updates</h3>
+                <p>
+                    The App provides optional breaking news alerts and daily morning bulletins:
+                </p>
+                <ul>
+                    <li>Notifications are delivered through <strong>Google Firebase Cloud Messaging (FCM)</strong> using the broadcast topic <code>daily_readers</code>. No personal identification data (name, email, phone) is collected or attached to your notification token.</li>
+                    <li>On Android 13 (API 33) and above, notification display strictly requires your explicit runtime permission (<code>POST_NOTIFICATIONS</code>), which can be granted or revoked at any time in system settings.</li>
+                    <li>The App integrates the official Google Play Flexible In-App Updates API to allow seamless background updates while you browse news.</li>
+                </ul>
+
+                <h3>6. Intellectual Property Rights</h3>
+                <p>
+                    All software code, application architecture, graphical UI designs, app icons, logos, and brand identity elements associated with "Uttar Pradesh News" are the intellectual property of <strong>Zorif</strong>, protected by applicable copyright, trademark, and intellectual property laws.
+                </p>
+
+                <h3>7. News Disclaimer &amp; Disclaimer of Warranties ("As-Is")</h3>
+                <p>
+                    Uttar Pradesh News is an independent news aggregation platform. Please note:
+                </p>
+                <ul>
+                    <li>The App is <strong>not affiliated with, authorized, sponsored, or endorsed by</strong> any government authority, political party, or news organization.</li>
+                    <li>All news headlines and article links reflect solely the independent editorial stance of the respective original publishers. We make no representations or warranties regarding the completeness, timeliness, or accuracy of any third-party report.</li>
+                    <li>The App is provided on an <strong>"AS IS" and "AS AVAILABLE"</strong> basis without warranties of any kind, whether express or implied, including fitness for a particular purpose or continuous feed availability.</li>
+                </ul>
+
+                <h3>8. Limitation of Liability</h3>
+                <p>
+                    To the maximum extent permitted by applicable law, in no event shall the developer (Zorif) be held liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from your access to, use of, or inability to use the application, or any reliance placed upon aggregated news content.
+                </p>
+
+                <h3>9. Termination &amp; User Data Erasure</h3>
+                <p>
+                    You may terminate your agreement with these Terms at any time by ceasing all use of the application and uninstalling it from your device. You may also completely erase all locally cached news items and offline bookmarks at any time through Android Settings (<strong>Settings &rarr; Apps &rarr; Uttar Pradesh News &rarr; Storage &rarr; Clear Data / Clear Storage</strong>).
+                </p>
+
+                <h3>10. Governing Law &amp; Dispute Resolution</h3>
+                <p>
+                    These Terms of Service and any disputes related thereto shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.
+                </p>
+
+                <h3>11. Modifications to Terms</h3>
+                <p>
+                    We reserve the right to modify, amend, or update these Terms of Service at our discretion. Any revisions will be published on this page with an updated effective date. Continued use of the application following the posting of changes constitutes your acceptance of the revised Terms.
+                </p>
+
+                <h3>12. Contact &amp; Grievance Redressal</h3>
+                <p>
+                    If you have any questions, feedback, copyright concerns, or grievances regarding these Terms of Service, please contact us directly at <a href="mailto:zorifla@gmail.com">zorifla@gmail.com</a>. We endeavor to resolve all inquiries within 24–48 hours.
+                </p>
+            </section>
+
+            <!-- ======================================================== -->
+            <!-- PRIVACY POLICY SECTIONS                                  -->
+            <!-- ======================================================== -->
+
+            <!-- Section 1: Introduction -->
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>
+                    Welcome to <strong>Uttar Pradesh News</strong> ("the App", "we", "us", or "our"), published and operated by <strong>Zorif</strong>. We are committed to safeguarding your personal privacy while delivering fast, transparent, and accurate news aggregation for the state of Uttar Pradesh and national headlines.
+                </p>
+                <p>
+                    This Privacy Policy informs users of our policies regarding the collection, use, and disclosure of information when you use our Android mobile application. By downloading, accessing, or using Uttar Pradesh News, you agree to the collection and use of information in accordance with this policy.
+                </p>
+            </section>
+
+            <!-- Section 2: What Data We Collect -->
+            <section id="no-pii">
+                <h2>2. Information Collection &amp; Use</h2>
+                <p>
+                    We believe in minimal data footprint. We do not require you to create an account, log in with social networks, or submit personal details to read news.
+                </p>
+
+                <h3>A. Personal Information</h3>
+                <p>
+                    <strong>We do not collect any Personally Identifiable Information (PII)</strong> such as your name, residential address, email address, phone number, contacts list, camera, microphone, or precise GPS location.
+                </p>
+
+                <h3 id="storage">B. Local Storage &amp; Offline Data</h3>
+                <p>
+                    The App uses your device's local database storage (via Android Room SQLite) solely for:
+                </p>
+                <ul>
+                    <li><strong>Temporary News Cache:</strong> Storing article headlines, summaries, and image URLs to provide fast loading and low bandwidth usage.</li>
+                    <li><strong>User Bookmarks:</strong> Storing articles you manually choose to "Save" (सहेजी गई खबरें) so you can read them offline.</li>
+                </ul>
+                <p>
+                    <em>Note: All bookmarked and cached data remains strictly stored on your physical device. It is never uploaded, transferred, or synced to any external server owned by us.</em>
+                </p>
+            </section>
+
+            <!-- Section 3: Third-Party Advertising (Google AdMob & Meta Audience Network) -->
+            <section id="advertising">
+                <h2>3. Third-Party Advertising (Google AdMob &amp; Meta Audience Network)</h2>
+                <p>
+                    To keep Uttar Pradesh News 100% free for all readers, we display advertisements supplied by <strong>Google Mobile Ads (Google AdMob)</strong> and <strong>Meta Audience Network</strong> through AdMob mediation.
+                </p>
+                <p>
+                    We strictly ensure that ads are displayed in a clean, non-disruptive manner:
+                </p>
+                <ul>
+                    <li><strong>Adaptive Banners:</strong> Non-intrusive banner ads anchored at the bottom of the feed that auto-adjust safely above Android navigation bars.</li>
+                    <li><strong>Frequency-Capped Interstitials:</strong> Full-screen transition ads configured with strict frequency thresholds (capped at 1 per every 4 articles read) to avoid interrupting user reading sessions.</li>
+                </ul>
+
+                <h3>Third-Party SDK Disclosures:</h3>
+                <p>
+                    These advertising networks may automatically process non-sensitive device telemetry (such as your general device model, operating system version, carrier, network connection type, and Google Advertising ID / GAID) to serve relevant advertisements, prevent fraudulent clicks, and monitor campaign performance.
+                </p>
+                <ul>
+                    <li><strong>Google AdMob &amp; Google Play Services:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Privacy &amp; Terms for Ads</a></li>
+                    <li><strong>Meta Audience Network:</strong> <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
+                </ul>
+
+                <div class="callout callout-warning">
+                    <div class="callout-title">⚠️ Google Advertising ID (GAID) Policy:</div>
+                    <p>
+                        Our application requests the standard <code>com.google.android.gms.permission.AD_ID</code> permission exclusively to enable compliant ad delivery via the official Google Mobile Ads SDK. We do not link your advertising identifier to any personal data.
+                    </p>
                 </div>
 
-                <p style="margin-top: 14px;">
-                    <a href="mailto:zorifla@gmail.com?subject=Uttarakhand%20News%20-%20Terms%20%26%20Privacy%20Inquiry" class="contact-email-btn">
-                        ✉️ zorifla@gmail.com
-                    </a>
-                </p>
-            </div>
-        </div>
+                <div class="callout">
+                    <div class="callout-title">How to Reset or Opt-Out of Personalized Ads:</div>
+                    You can reset or opt-out of personalized interest-based advertising anytime directly in your Android phone settings:
+                    <br><strong>Settings &rarr; Google &rarr; Ads &rarr; Reset Advertising ID or Delete Advertising ID</strong>.
+                </div>
+            </section>
 
+            <!-- Section 4: News Aggregation & In-App WebViews -->
+            <section id="rss-feeds">
+                <h2>4. RSS Feed Aggregation &amp; Web View Reader</h2>
+                <p>
+                    Uttar Pradesh News is an RSS feed reader and news aggregator. The App fetches publicly available RSS syndication feeds published by leading Hindi news publishers:
+                </p>
+                <ul>
+                    <li><strong>दैनिक भास्कर (Dainik Bhaskar):</strong> <a href="https://www.bhaskar.com/uttar-pradesh/" target="_blank" rel="noopener">bhaskar.com</a></li>
+                    <li><strong>लाइव हिन्दुस्तान (Live Hindustan):</strong> <a href="https://www.livehindustan.com/uttar-pradesh" target="_blank" rel="noopener">livehindustan.com</a> (Lucknow &amp; Varanasi regional editions)</li>
+                    <li><strong>अमर उजाला (Amar Ujala):</strong> <a href="https://www.amarujala.com/uttar-pradesh" target="_blank" rel="noopener">amarujala.com</a></li>
+                    <li><strong>News18 हिंदी (News18 Hindi):</strong> <a href="https://hindi.news18.com/uttar-pradesh/" target="_blank" rel="noopener">hindi.news18.com</a></li>
+                </ul>
+
+                <p>
+                    When you tap on any news article card, the full original article is opened within an in-app <strong>Android WebView</strong> (with a clean reader mode for selected sources), loading directly from the publisher's official server.
+                </p>
+                <p>
+                    Please be aware that when browsing external publisher web pages inside the WebView, the publisher's own web servers may use web cookies, analytic tags, or scripts subject to their respective terms and privacy policies. We do not control or access the web data exchanged between your browser and the news publishers.
+                </p>
+            </section>
+
+            <!-- Section 5: Push Notifications (Firebase Cloud Messaging) & App Updates -->
+            <section id="push-notifications">
+                <h2>5. Push Notifications (Firebase Cloud Messaging) &amp; In-App Updates</h2>
+                <p>
+                    Uttar Pradesh News provides real-time news alerts and seamless application maintenance:
+                </p>
+
+                <h3>A. Firebase Cloud Messaging (FCM)</h3>
+                <p>
+                    The App utilizes <strong>Firebase Cloud Messaging (FCM)</strong>, an infrastructure service provided by Google LLC, to deliver optional daily morning alerts, and important state updates concerning Uttar Pradesh.
+                </p>
+                <ul>
+                    <li><strong>Pseudonymous Token:</strong> To route notifications to your device, a randomized, non-personally identifiable Firebase installation token is generated. This token does not contain personal information (such as your name, email, or phone number) and is used exclusively for transmitting news alerts to the general broadcast topic (<code>daily_readers</code>).</li>
+                    <li><strong>Explicit Permission (Android 13+):</strong> On Android 13 (API 33) and later versions, the App strictly requests explicit runtime permission (<code>POST_NOTIFICATIONS</code>) before presenting any notification alerts.</li>
+                    <li><strong>User Control &amp; Opt-Out:</strong> You may disable news notifications at any time directly through your Android device settings (<em>Settings &rarr; Apps &rarr; Uttar Pradesh News &rarr; Notifications &rarr; Turn Off</em>). Disabling notifications stops all broadcast alerts immediately.</li>
+                </ul>
+
+                <h3>B. Google Play Flexible In-App Updates</h3>
+                <p>
+                    The App integrates the official <strong>Google Play In-App Update</strong> library to keep your application up-to-date with the latest security enhancements, performance improvements, and news feed optimizations.
+                </p>
+                <ul>
+                    <li>Flexible updates download silently in the background while you continue reading news uninterrupted.</li>
+                    <li>All update files are securely verified and distributed directly by Google Play infrastructure. No personal or device data is collected or transmitted to external servers by this mechanism.</li>
+                </ul>
+            </section>
+
+            <!-- Section 6: Android Device Permissions -->
+            <section id="permissions">
+                <h2>6. Android Permissions Used</h2>
+                <p>
+                    Uttar Pradesh News requires only standard, non-sensitive Android permissions:
+                </p>
+                <ul>
+                    <li><strong>android.permission.INTERNET:</strong> Essential for downloading the latest RSS news feeds, fetching news article thumbnails, and loading news articles in the reader.</li>
+                    <li><strong>android.permission.ACCESS_NETWORK_STATE:</strong> Allows the App to detect whether your device is connected to Wi-Fi, cellular, or offline, enabling offline bookmark fallback notices.</li>
+                    <li><strong>android.permission.POST_NOTIFICATIONS:</strong> Required on Android 13 (API 33) and above to display timely updates. This permission is completely optional and can be managed in system settings.</li>
+                </ul>
+                <p>
+                    The App does <em>not</em> request permissions for Camera, Microphone, Contacts, Location, SMS, Phone State, or External Storage.
+                </p>
+            </section>
+
+            <!-- Section 7: Data Retention & Deletion -->
+            <section id="retention">
+                <h2>7. Data Retention &amp; User Deletion Rights</h2>
+                <p>
+                    Because we do not store any personal user data on external servers, you have full and immediate control over your data:
+                </p>
+                <ul>
+                    <li><strong>Individual Article Deletion:</strong> You can un-bookmark any saved news item at any time by tapping the bookmark icon on the article card.</li>
+                    <li><strong>Complete Data Erasure:</strong> You can clear all cached news and saved articles at any time by going to <strong>Settings &rarr; Apps &rarr; Uttar Pradesh News &rarr; Storage &rarr; Clear Data</strong>, or by uninstalling the application from your device.</li>
+                </ul>
+            </section>
+
+            <!-- Section 8: Children's Privacy -->
+            <section id="children">
+                <h2>8. Children's Privacy (COPPA &amp; GDPR)</h2>
+                <p>
+                    Uttar Pradesh News is designed for a general audience seeking news updates and is not targeted towards children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe that a child has provided us with personal information, please contact us immediately so we can promptly take appropriate actions.
+                </p>
+            </section>
+
+            <!-- Section 9: Security -->
+            <section id="security">
+                <h2>9. Data Security</h2>
+                <p>
+                    We value your trust in using our App. All RSS feed queries and in-app web views use standard Secure Sockets Layer / Transport Layer Security (SSL/TLS) HTTPS encryption to protect data in transit from tampering and eavesdropping.
+                </p>
+            </section>
+
+            <!-- Section 10: Disclaimer & Intellectual Property -->
+            <section id="disclaimer">
+                <h2>10. Publisher Disclaimer &amp; Fair Use</h2>
+                <p>
+                    Uttar Pradesh News does not claim ownership of the news articles, headlines, excerpts, or images displayed via RSS feeds. All intellectual property, trademarks, and copyrights belong to their respective publishers (Dainik Bhaskar, Live Hindustan, Amar Ujala, hindi.news18.com). The App serves solely as a user-friendly technological conduit to read publicly distributed RSS summaries with full attribution and links to the original sources.
+                </p>
+            </section>
+
+            <!-- Section 11: Policy Updates -->
+            <section id="updates">
+                <h2>11. Changes to This Privacy Policy</h2>
+                <p>
+                    We may update our Privacy Policy periodically to reflect changes in legal requirements, third-party SDK updates, or application features. Any modifications will be posted on this page with an updated "Last Updated" revision date. You are advised to review this page periodically for any updates.
+                </p>
+            </section>
+
+            <!-- Section 12: Contact Information (Target for #contact) -->
+            <section id="contact">
+                <a id="contact-us" name="contact"></a>
+                <h2>12. Contact Information &amp; Grievance Redressal</h2>
+                <p>
+                    If you have any questions, concerns, feedback, technical inquiries, or copyright grievances regarding this Privacy Policy or Uttar Pradesh News, please contact us:
+                </p>
+                <div class="contact-box">
+                    <p style="font-size: 1.15rem; font-weight: 700; color: var(--primary-dark);">
+                        Uttar Pradesh News Developer &amp; Support Team
+                    </p>
+
+                    <div class="contact-details-list">
+                        <div><strong>Legal Entity / Developer:</strong> Zorif</div>
+                        <div><strong>Application:</strong> Uttar Pradesh News (उत्तर प्रदेश न्यूज़)</div>
+                        <div><strong>Package:</strong> <code>com.uttarpradeshnewspoint.app</code></div>
+                        <div><strong>Category:</strong> News &amp; Magazine Aggregator</div>
+                        <div><strong>Official Email:</strong> zorifla@gmail.com</div>
+                        <div><strong>Response Time:</strong> Within 24–48 hours</div>
+                    </div>
+
+                    <p style="margin-top: 14px;">
+                        <a href="mailto:zorifla@gmail.com?subject=Uttar%20Pradesh%20News%20-%20Support%20%26%20Feedback" class="contact-email">
+                            ✉️ zorifla@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+        </main>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 <strong>Uttarakhand News</strong>. All rights reserved.</p>
-        <p style="margin-top: 6px;">Published by <strong>Zorif</strong> &bull; <a href="#terms" style="color: #475569; text-decoration: underline;">Terms of Service</a> &bull; <a href="#privacy" style="color: #475569; text-decoration: underline;">Privacy Policy</a> &bull; <a href="#contact" style="color: #475569; text-decoration: underline;">Contact Us</a> &bull; <a href="#top" style="color: #475569; text-decoration: underline;">Back to Top &uarr;</a></p>
-        <p style="margin-top: 6px; font-size: 0.78rem; color: #64748B;">This document is hosted in compliance with Google Play Developer Policy, News and Magazines Policy, EU Digital Services Act (DSA), Google AdMob Policies, and Meta Audience Network terms.</p>
+        <p>&copy; 2026 <strong>Uttar Pradesh News</strong>. All rights reserved. Free Hindi News Aggregator.</p>
+        <p style="margin-top: 4px;">Published by <strong>Zorif</strong> &bull; <a href="#terms" style="color: #555; text-decoration: underline;">Terms of Service</a> &bull; <a href="terms.html" style="color: #555; text-decoration: underline;">Standalone Terms</a> &bull; <a href="#privacy" style="color: #555; text-decoration: underline;">Privacy Policy</a> &bull; <a href="#contact" style="color: #555; text-decoration: underline;">Contact Us</a> &bull; <a href="#top" style="color: #555; text-decoration: underline;">Back to Top &uarr;</a></p>
+        <p style="margin-top: 6px; font-size: 0.78rem;">This policy and terms of service are hosted in compliance with Google Play Developer Policy, News and Magazines Policy, EU Digital Services Act (DSA), Google AdMob Policies, and Meta Audience Network terms.</p>
     </footer>
 
     <!-- Script to automatically scroll to & highlight contact or terms information when anchor is called -->
@@ -972,6 +901,7 @@
                 if (termsSection) {
                     setTimeout(function() {
                         termsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        termsSection.classList.add('terms-highlight');
                     }, 120);
                 }
             }
